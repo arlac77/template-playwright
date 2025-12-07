@@ -26,6 +26,9 @@
           ]
         }
       }
+    ],
+    "inheritFrom": [
+      "arlac77/template-npm"
     ]
   }
 }
