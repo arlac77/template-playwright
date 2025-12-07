@@ -9,6 +9,13 @@
   },
   "template": {
     "properties": {
+      "test": {
+        "browsers": [
+          "webkit",
+          "chorme",
+          "firefox"
+        ]
+      },
       "playwright": {}
     },
     "mergers": [
