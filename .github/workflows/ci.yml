@@ -9,6 +9,7 @@ permissions:
   id-token: write
 jobs:
   test:
+    timeout-minutes: 60
     steps:
       - name: checkout
         uses: actions/checkout@v6.0.1
