@@ -7,12 +7,99 @@
     "playwright": "^1.57.0",
     "@playwright/test": "^1.57.0"
   },
-    "template": {
+  "template": {
     "properties": {
-      "playwright": {
-      }
+      "playwright": {}
     },
     "mergers": [
+      {
+        "type": "YAML",
+        "pattern": ".github/workflows/*.yml",
+        "options": {
+          "messagePrefix": "chore(actions): ",
+          "mergeHints": {
+            "": {
+              "orderBy": [
+                "name",
+                "on",
+                "permissions",
+                "env",
+                "defaults",
+                "concurrency",
+                "jobs"
+              ]
+            },
+            "jobs": {
+              "orderBy": [
+                "test",
+                "test-node",
+                "test-browser",
+                "release",
+                "finish"
+              ]
+            },
+            "jobs.test-node": {
+              "orderBy": [
+                "name",
+                "needs",
+                "if",
+                "runs-on",
+                "strategy",
+                "permissions",
+                "defaults",
+                "concurrency",
+                "outputs",
+                "env",
+                "environments",
+                "services",
+                "steps"
+              ]
+            },
+            "jobs.release": {
+              "orderBy": [
+                "name",
+                "needs",
+                "if",
+                "runs-on",
+                "strategy",
+                "permissions",
+                "defaults",
+                "concurrency",
+                "outputs",
+                "env",
+                "environments",
+                "services",
+                "steps"
+              ]
+            },
+            "jobs.finish": {
+              "orderBy": [
+                "name",
+                "needs",
+                "if",
+                "runs-on",
+                "strategy",
+                "permissions",
+                "defaults",
+                "concurrency",
+                "outputs",
+                "env",
+                "environments",
+                "services",
+                "steps"
+              ]
+            },
+            "*.matrix.node-version": {
+              "scope": "deps",
+              "merge": "mergeVersionsPreferNumeric"
+            },
+            "*.steps": {
+              "key": "id|name|uses|run",
+              "normalizeValue": "@.*"
+            }
+          }
+        }
+      },
       {
         "type": "Readme",
         "pattern": "README.md",
