@@ -7,10 +7,9 @@
     "playwright": "^1.57.0",
     "@playwright/test": "^1.57.0"
   },
-    "template": {
+  "template": {
     "properties": {
-      "playwright": {
-      }
+      "playwright": {}
     },
     "mergers": [
       {
@@ -27,6 +26,9 @@
           ]
         }
       }
+    ],
+    "usedBy": [
+      "arlac77/svelte-log-view"
     ]
   }
 }
