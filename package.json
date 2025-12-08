@@ -1,12 +1,22 @@
 {
+  "name": "template-playwright",
+  "packageManager": "npm@11.6.4+sha512.1118cab46a05a50aee6bff5b1b4fa1df18afff89d57465620a3518035026955db87c5bdf9d207b07b7487d99f2490d450cb774655ad63ec2cba7bf1d0ad25d45",
   "scripts": {
     "test": "node --run test:playwright",
     "test:playwright": "npx playwright test"
   },
   "devDependencies": {
-    "playwright": "^1.57.0",
-    "@playwright/test": "^1.57.0"
+    "@playwright/test": "^1.57.0",
+    "playwright": "^1.57.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arlac77/template-playwright.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arlac77/template-playwright/issues"
+  },
+  "homepage": "https://github.com/arlac77/template-playwright#readme",
   "template": {
     "properties": {
       "test": {
@@ -34,8 +44,6 @@
         }
       }
     ],
-    "inheritFrom": [
-      "arlac77/template-npm"
-    ]
+    "inheritFrom": "arlac77/template-npm"
   }
 }
