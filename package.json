@@ -36,6 +36,9 @@
     ],
     "inheritFrom": [
       "arlac77/template-npm"
+    ],
+    "usedBy": [
+      "arlac77/svelte-entitlement"
     ]
   }
 }
