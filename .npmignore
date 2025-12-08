@@ -5,3 +5,10 @@
 /playwright/.cache/
 /playwright/.auth/
 playwright.config.js
+build
+tests
+doc
+*.log
+*.tmp
+.vscode
+.github
