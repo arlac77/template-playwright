@@ -42,7 +42,8 @@
       "arlac77/svelte-command",
       "arlac77/svelte-common",
       "arlac77/svelte-entitlement",
-      "arlac77/svelte-session-manager"
+      "arlac77/svelte-session-manager",
+      "arlac77/svelte-time-series"
     ]
   }
 }
