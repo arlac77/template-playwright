@@ -39,6 +39,7 @@
     ],
     "usedBy": [
       "Kronos-Integration/svelte-components",
+      "arlac77/npm-navigator",
       "arlac77/svelte-command",
       "arlac77/svelte-common",
       "arlac77/svelte-entitlement",
