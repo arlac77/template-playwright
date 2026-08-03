@@ -4,7 +4,7 @@
     "test:playwright": "npx playwright test"
   },
   "devDependencies": {
-    "playwright": "^1.62.0",
+    "playwright": "^1.62.1",
     "@playwright/test": "^1.62.1"
   },
   "template": {
